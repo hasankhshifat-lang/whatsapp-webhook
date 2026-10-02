@@ -1,0 +1,9 @@
+name = "whatsapp-webhook"
+main = "src/worker.js"
+compatibility_date = "2024-09-01"
+
+# Routes this Worker to your domain. Requires hasankhshifat.com to already be
+# a Cloudflare-managed zone (same account that runs your Pages site is fine).
+routes = [
+  { pattern = "hasankhshifat.com/webhook/whatsapp", zone_name = "hasankhshifat.com" }
+]
